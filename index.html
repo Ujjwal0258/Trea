@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/css/intlTelInput.css'>
+<link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Multi step form --> 
+<section class="multi_step_form">  
+  <form id="msform"> 
+    <!-- Tittle -->
+    <div class="tittle">
+      <h2>Personal Details</h2>
+      <!-- <p>In order to use this service, you have to complete this verification process</p> -->
+    </div>
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Personal Details</li>  
+      <li>Education Details</li> 
+      <li>Work Details</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+      <h3>Name & About</h3> 
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <div class="inputBox">
+            <input type="text" name="password" required onkeyup="this.setAttribute('value', this.value);"  value="">
+            <label>First Name&nbsp;<strong>*</strong></label>
+            </div>
+        </div> 
+        <div class="form-group col-md-6">
+          <div class="inputBox">
+          <input type="text" name="password" required onkeyup="this.setAttribute('value', this.value);"  value="">
+          <label>Last Name&nbsp;<strong>*</strong></label>
+          </div>
+        </div> 
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <div class="inputBox">
+            <input type="text" name="password" required onkeyup="this.setAttribute('value', this.value);"  value="">
+            <label>Something about you (ex: I build web interfaces)&nbsp;<strong>*</strong></label>
+            </div>
+        </div>  
+      </div>
+      <h3>Address</h3> 
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <select class="product_select">
+            <option data-display="Country <strong>*</strong>">India</option> 
+            <option>now</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <select class="product_select">
+            <option data-display="State <strong>*</strong>">Jharkhand</option> 
+            <option>now</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <select class="product_select">
+            <option data-display="City <strong>*</strong>">Bokaro</option> 
+            <option>now</option>
+          </select>
+        </div>  
+      </div>
+      <h3>Basic Languages</h3> 
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <select class="product_select">
+            <option data-display="Language 1 <strong>*</strong>">Hindi</option> 
+            <option>now</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <select class="product_select">
+            <option data-display="Language 2 <strong>*</strong>">English</option> 
+            <option>now</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <select class="product_select">
+            <option data-display="Language 3 <strong>*</strong>">Tamil</option> 
+            <option>now</option>
+          </select>
+        </div>  
+      </div>
+      <h3>Interest or Hobbies</h3> 
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <div class="inputBox">
+            <input type="text" name="password" required onkeyup="this.setAttribute('value', this.value);"  value="">
+            <label>Interest or Hobbies (ex: Playing,Reading or anything)&nbsp;<strong>*</strong></label>
+            </div>
+        </div>  
+      </div>
+      <h3>Contact Information</h3> 
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <div class="inputBox">
+            <input type="text" name="password" required onkeyup="this.setAttribute('value', this.value);"  value="">
+            <label>Phone No (ex: 9876543210)&nbsp;<strong>*</strong></label>
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+          <div class="inputBox">
+            <input type="text" name="password" required onkeyup="this.setAttribute('value', this.value);"  value="">
+            <label>Email (ex: bhola@gmail.com)&nbsp;<strong>*</strong></label>
+            </div>
+        </div>
+         
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <div class="inputBox">
+            <input type="text" name="password" required onkeyup="this.setAttribute('value', this.value);"  value="">
+            <label>Github (ex:bhola1999)&nbsp;<strong>*</strong></label>
+            </div>
+        </div> 
+        <div class="form-group col-md-6">
+          <div class="inputBox">
+            <input type="text" name="password" required onkeyup="this.setAttribute('value', this.value);"  value="">
+            <label>Linkedin (ex:)&nbsp;<strong>*</strong></label>
+            </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <div class="inputBox">
+            <input type="text" name="password" required onkeyup="this.setAttribute('value', this.value);"  value="">
+            <label>Telegram (ex:)&nbsp;<strong>*</strong></label>
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+          <div class="inputBox">
+            <input type="text" name="password" required onkeyup="this.setAttribute('value', this.value);"  value="">
+            <label>Skype (ex:)&nbsp;<strong>*</strong></label>
+            </div>
+        </div>
+      </div>
+          
+      <br>
+      <button type="button" class="action-button previous_button">Back</button>
+      <button type="button" class="next action-button">Continue</button>  
+
+    </fieldset>
+    <fieldset>
+      <h3>Education</h3> 
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <div class="inputBox">
+            <input type="text" name="password" required onkeyup="this.setAttribute('value', this.value);"  value="">
+            <label>Interest or Hobbies (ex: Playing,Reading or anything)&nbsp;<strong>*</strong></label>
+            </div>
+        </div>  
+      </div>
+      
+      <!-- <div class="input-group"> 
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="upload">
+          <label class="custom-file-label" for="upload"><i class="ion-android-cloud-outline"></i>Choose file</label>
+        </div>
+      </div> -->
+
+      <button type="button" class="action-button previous previous_button">Back</button>
+      <button type="button" class="next action-button">Continue</button>  
+    </fieldset>  
+    <fieldset>
+      <h3>Create Security Questions</h3>
+      <h6>Please update your account with security questions</h6> 
+      <div class="form-group"> 
+        <select class="product_select">
+          <option data-display="1. Choose A Question">1. Choose A Question</option> 
+          <option>now</option>
+          <option>3. Choose A Question</option> 
+        </select>
+      </div> 
+      <div class="form-group fg_2"> 
+        <input type="text" class="form-control" placeholder="Anwser here:">
+      </div> 
+      <div class="form-group"> 
+        <select class="product_select">
+          <option data-display="1. Choose A Question">1. Choose A Question</option> 
+          <option>2. Choose A Question</option>
+          <option>3. Choose A Question</option> 
+        </select>
+      </div> 
+      <div class="form-group fg_3"> 
+        <input type="text" class="form-control" placeholder="Anwser here:">
+      </div> 
+      <button type="button" class="action-button previous previous_button">Back</button> 
+      <a href="#" class="action-button">Finish</a> 
+    </fieldset>  
+  </form>  
+</section> 
+<!-- End Multi step form -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/js/intlTelInput.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
